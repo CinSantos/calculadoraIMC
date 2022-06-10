@@ -34,11 +34,11 @@ function calculoIMC() {
     let imc = Number(peso/((altura*altura)/10000)).toFixed(2);
       if(imc<20){
         res.innerHTML =`abaixo do peso : <span>${imc}</span>`;
-        }else if (imc>=20){
+        }else if (imc>=20&& imc<25){
         res.innerHTML =`normal : <span>${imc}</span>`;
-        }else if(imc>=25){
+        }else if(imc>=25&&imc<30){
         res.innerHTML =`sobrepeso : <span>${imc}</span>`;
-        }else if(imc>=30){
+        }else if(imc>=30&&imc<35){
         res.innerHTML =`obesidade : <span>${imc}</span>`;
         }else if(imc>35){
         res.innerHTML =`obesidade II : <span>${imc}</span>`;
